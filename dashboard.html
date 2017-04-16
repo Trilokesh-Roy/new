@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guestext</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/update.css">
+
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header-container">
+			<header id="header" class="container">
+				<div class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">MY ACCOUNT <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">My Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+				<div class="responsive-menu">
+					<a href="#"><img src="assets/graphics/menu.png"></a>
+				</div>
+				<div id="logo">
+					<h1><img src="assets/graphics/logo.png" alt="Guestext"></h1>
+					<div class="welcome">Welcome, Admin</div>
+				</div><!--end of logo-->
+			</header><!--end of header-->
+		</div><!--end of header-container-->
+
+
+		<aside id="sidebar" class="main-sidebar">
+			<ul class="sidebar-menu">
+				<li class="active"><a href="dashboard.html" title="Guests"><span class="dashboard-icon"></span>Dashboard</a></li>
+				<li><a href="events.html" title="Guests"><span class="guest-icon"></span>Events</a></li>
+				<li><a href="speaker.html" title="Loyalty"><span class="loyal-icon"></span>Speakers</a></li>
+				<li><a href="planner.html" title="Schedules"><span class="schedule-icon"></span>Planners</a></li>
+				<!-- <li><a href="group.html" title="Groups"><span class="group-icon"></span>Groups</a></li> -->
+				<!-- <li><a href="user-page.html" title="Groups"><span class="user-icon"></span>User</a></li>		 -->
+			</ul><!-- end of sidebar-menu -->
+		</aside><!-- end of sidebar -->
+
+		<div class="content-wrapper">
+			<div class="dashboard-content clearfix">
+				<div class="top-row">
+					<div class="dashboard-title">Graphs</div>
+					<div class="graph-time">
+						<div class="form-group">
+							<select class="form-control">
+								<option>Today</option>
+								<option>Yesterday</option>
+								<option>Today</option>
+							</select>
+						</div>						
+					</div>
+				</div>
+				<div class="canvas-holder">
+					<div class="number-chart"><label>Messages:</label> <span>1,528</span></div>
+					<canvas id="canvas"></canvas>
+				</div>
+
+
+				<div class="msg-count-wrap">
+					<div class="msg-count-box">
+						<div class="circle one" data-value="0.9" data-size="152" data-thickness="20" data-animation-start-value="1.0" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;, &quot;image&quot;: &quot;assets/graphics/gradient1.png&quot; }" data-reverse="true">
+							<div class="msg-count-data">Signups <span>394</span></div>
+						</div>
+
+						<div class="msg-note">No. of connected guests</div>
+					</div>
+
+					<div class="msg-count-box">
+						<div class="circle two" data-value="0.9" data-size="152" data-thickness="20" data-animation-start-value="1.0" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;, &quot;image&quot;: &quot;assets/graphics/gradient2.png&quot; }" data-reverse="true">
+							<div class="msg-count-data">Active <span>363</span></div>
+						</div>
+
+						<div class="msg-note">No. of active guests</div>
+					</div>
+
+					<!-- <div class="msg-count-box">
+						<div class="circle three" data-value="0.9" data-size="152" data-thickness="20" data-animation-start-value="1.0" data-fill="{ &quot;color&quot;: &quot;rgba(0, 0, 0, .3)&quot;, &quot;image&quot;: &quot;assets/graphics/gradient3.png&quot; }" data-reverse="true">
+							<div class="msg-count-data">Inactive <span>82</span></div>
+						</div>
+
+						<div class="msg-note">No. of inactive guests</div>
+					</div> -->
+				</div>
+				<div class="top-chatters">
+					<div class="bottom-row">
+						<div class="dashboard-title">
+							SESSIONS <span>(3)</span>
+						</div>
+						<div class="dashboard-option">
+							<div class="graph-time">
+								<div class="form-group">
+									<select class="form-control">
+										<option>Today</option>
+										<option>Yesterday</option>
+										<option>Today</option>
+									</select>
+								</div>
+								<div class="form-group form-location">
+									<select class="form-control">
+										<option>EyeforTravel North Americ..</option>
+										<option>EyeforTravel North Americ..</option>
+										<option>EyeforTravel North Americ..</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chatter-block">
+						<div class="dashboard-search-form">
+							<!-- <input type="text" placeholder="Search"> -->
+							<div class="search-filter">
+								<div class="search-box">
+									<input type="text" placeholder="Search" value="">
+									<input type="submit" value="Submit">									
+								</div>
+							</div>
+							<div class="table-controls">
+								<p><input type="text" value="1"> of 25</p>
+
+								<ul class="pagination">
+									<li><a href="#"><img src="assets/images/prev.png"></a></li>
+									<li><a href="#"><img src="assets/images/next.png"></a></li>
+								</ul>
+								<ul class="table-edit">
+									<li><a href="#"><img src="assets/images/upload.png"></a></li>
+									<li><a href="#"><img src="assets/images/download.png"></a></li>
+								</ul>
+							</div>
+						</div>
+						<table class="dashboard-table">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Attendees</th>
+									<th class="td-lg-scrn">Planner</th>
+									<th class="td-lg-scrn">Schedule</th>
+									<th class="td-lg-scrn">Action</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										Channel Optimization: Best Practices, Current Trends, and a Glimpse into the Future
+									</td>
+									<td>250</td>
+									<td class="td-lg-scrn">Julie Ziu </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Another Event: How to Leverage Your Guests Satisfaction Using These Methods
+									</td>
+									<td> 182 </td>
+									<td class="td-lg-scrn">Richard Micheal </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Data, Data and More Data: Travel’s Big Driver in 2017
+									</td>
+									<td> 105 </td>
+									<td class="td-lg-scrn"> Cathy Alvarez </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Channel Optimization: Best Practices, Current Trends, and a Glimpse into the Future
+									</td>
+									<td>250</td>
+									<td class="td-lg-scrn">Julie Ziu </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Another Event: How to Leverage Your Guests Satisfaction Using These Methods
+									</td>
+									<td> 182 </td>
+									<td class="td-lg-scrn">Richard Micheal </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Data, Data and More Data: Travel’s Big Driver in 2017
+									</td>
+									<td> 105 </td>
+									<td class="td-lg-scrn"> Cathy Alvarez </td>
+									<td class="td-sm-scrn more-details"><a href="#">More</a>
+										<div class="more-hover">
+											<p class="more-label">Date Signup</p>
+											<p> March 06, 2017</p>
+											<p class="more-label">Last Activity</p>
+											<p> March 06, 2017</p>
+											<div class="message-button">
+												<button class="btn-msg">Message</button>
+											</div>
+										</div>
+									</td>
+									<td class="td-lg-scrn"> March 06, 2017 </td>
+									<td class="td-lg-scrn">
+										<button class="btn-msg"> View Discussion </button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div><!-- end of content-wrapper -->
+
+			<div class="chatbox">
+				<div class="chat-title-box">
+					<div class="responsive-back"><a href="#">Back</a></div>
+					<a href="javascript:void(0);" class="chat-close"></a>
+					<div class="chatbox-title">Wedding</div>
+				</div>
+
+				<div class="chat-details">
+					<div class="chat-date">Wednesday, June  8, 2016 </div>
+					<div class="chat-line from">
+						<div class="chat-time">9:08 AM</div>
+						<div class="chat-msg">Good day Ms. Vargas hope you enjoyed your stay at our hotel.</div>
+					</div>
+
+					<div class="chat-date">Friday, June  10, 2016 </div>
+					<div class="chat-line to">
+						<div class="chat-time">10:28 AM</div>
+						<div class="chat-msg">This is a guest reply #1</div>
+					</div>
+
+					<div class="chat-date">Wednesday, June  8, 2016 </div>
+					<div class="chat-line from">
+						<div class="chat-time">9:08 AM</div>
+						<div class="chat-msg">Good day Ms. Vargas hope you enjoyed your stay at our hotel.</div>
+					</div>
+
+					<div class="chat-date">Friday, June  10, 2016 </div>
+					<div class="chat-line to">
+						<div class="chat-time">10:28 AM</div>
+						<div class="chat-msg">This is a guest reply #1</div>
+					</div>						
+				</div>
+				<div class="chat-box">
+					<div class="chatsend">
+						<textarea class="form-controls" placeholder="Enter your reply here...." rows="1" cols="1"></textarea>
+						<input type="submit" class="chat_send_btn" value="SEND">
+					</div>
+				</div>
+			</div>
+		</div><!--end of wrapper-->
+
+
+		<!-- scripts -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/moment.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Chart CDN -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+
+		<script type="text/javascript" src="assets/js/circle-progress.js"></script>
+		<script type="text/javascript" src="assets/js/stickyfloat.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+
+
+		<script>
+
+
+			var data = {
+				labels: ["M", "T", "W", "T", "F", "S", "S"],
+				datasets: [
+				{
+					label: " ",
+					backgroundColor: "rgba(232,241,250,1)",
+					borderColor: "rgba(232,241,250,1)",
+					borderWidth: 1,
+					hoverBackgroundColor: "rgba(80,162,211,1)",
+					hoverBorderColor: "rgba(80,162,211,1)",
+					data: [150, 200, 185, 225, 280, 300, 290],
+				}
+				]
+			};
+
+			window.onload = function() {
+				var ctx = document.getElementById("canvas").getContext("2d");
+				window.myBar = new Chart(ctx, {
+					type: 'bar',
+					data: data
+				});
+
+			};
+
+
+		</script>
+
+	</body>
+	</html>

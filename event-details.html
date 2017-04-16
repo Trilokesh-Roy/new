@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guestext</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/update.css">
+
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header-container">
+			<header id="header" class="container">
+				<div class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">MY ACCOUNT <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">My Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+				<div class="responsive-menu">
+					<a href="#"><img src="assets/graphics/menu.png"></a>
+				</div>
+				<div id="logo">
+					<h1><img src="assets/graphics/logo.png" alt="Guestext"></h1>
+					<div class="welcome">Welcome, Admin</div>
+				</div><!--end of logo-->
+			</header><!--end of header-->
+		</div><!--end of header-container-->
+
+
+		<aside id="sidebar" class="main-sidebar">
+			<ul class="sidebar-menu">
+				<li><a href="dashboard.html" title="Guests"><span class="dashboard-icon"></span>Dashboard</a></li>
+				<li class="active"><a href="events.html" title="Guests"><span class="guest-icon"></span>Events</a></li>
+				<li><a href="speaker.html" title="Loyalty"><span class="loyal-icon"></span>Speakers</a></li>
+				<li><a href="planner.html" title="Schedules"><span class="schedule-icon"></span>Planners</a></li>
+				<!-- <li><a href="group.html" title="Groups"><span class="group-icon"></span>Groups</a></li> -->
+				<!-- <li><a href="user-page.html" title="Groups"><span class="user-icon"></span>User</a></li>		 -->
+			</ul><!-- end of sidebar-menu -->
+		</aside><!-- end of sidebar -->
+
+		<div class="content-wrapper">
+			<div class="event-detail white">
+				<div class="submenu-inner pull-left">
+					<div class="title-row">
+						<a href="events.html">Back</a>
+						<div class="title-left">
+							<strong> EyeforTravel North America 2017 </strong>
+							<span class="date-title">02/23/2017 - 02/24/2017 </span>
+						</div>
+					</div>
+				</div>
+				<div class="submenu-inner pull-right">
+					<ul class="list-unstyled">
+						<li class="group-click-msg active"><a href="#">Messages</a></li>
+						<li class="group-click-schedule"><a href="#">Schedules</a></li>
+						<li class="group-click-session"><a href="#">Sessions</a></li>
+						<li class="group-click-attendees"><a href="#">Attendees</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="event-detail-block">
+				<div class="group-messages group-box event-box">
+					<div class="event-schedule-box">
+						<div class="chat-details mCustomScrollbar" data-mcs-theme="minimal-dark">
+							<div class="chat-date">Thursday, October 19 , 2017 </div>
+							<div class="chat-line from">
+								<div class="chat-time">9:08 AM</div>
+								<div class="chat-msg">Thanks for joining EyeforTravel North America 2017 Have a nice day!</div>
+							</div>
+						</div>
+						<div class="chat-box">
+							<div class="chatsend">
+								<textarea cols="1" rows="1" placeholder="Enter your reply here...." class="form-controls"></textarea>
+								<input type="submit" value="SEND" class="chat_send_btn">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="group-schedule group-box">
+					<div class="responsive-tab">
+						<ul class="list-unstyled">
+							<li class="active initialclick"><a href="#"><span class="initial-icon-small"></span>Initial</a></li>
+							<li class="customclick"><a href="#"><span class="custom-icon-small"></span>Custom</a></li>
+							<li class="autoclick"><a href="#"><span class="auto-icon-small"></span>Auto</a></li>
+							<!-- <li class="groupclick"><a href="#"><span class="group-icon-small"></span>Group</a></li> -->
+						</ul>
+					</div>
+
+					<div class="schedule-blocks clearfix">
+						<div class="single-block initial-block">
+							<h3 class="block-title"><span class="initial-icon"></span> Initial</h3>
+							<div class="blockbox clearfix">
+								<p>Thanks for joining EyeforTravel North America 2017 Have a nice day!</p>
+							</div>
+						</div>
+						<div class="single-block custom-block">
+							<h3 class="block-title"><span class="custom-icon"></span> Custom </h3>
+							<a href="#" class="addbtn addcustom">Add New</a>
+							<div class="blockbox clearfix">
+								<p> Good day! If there is anything we can do please let us know </p>	
+							</div>
+						</div>
+						<div class="single-block auto-block">
+							<h3 class="block-title"><span class="auto-icon"></span> Auto</h3>
+							<a href="#" class="addbtn addauto">Add New</a>
+							<div class="blockbox clearfix">
+								<p>Hello, please send us a text to let us know if you have any questions.</p>
+							</div>
+						</div>	
+					</div>	
+
+					<!-- Edit Initial Msg -->
+					<div class="initial-msg pop">
+						<a href="#" class="close-btn"></a>
+						<div class="pop-title">Edit Initial Messages</div>
+						<textarea class="form-control" >Thanks for signing up with The Shores Resort & Spa, we look forward to your arrival</textarea>
+
+						<div class="save"><a href="#" class="save-btn">Save</a></div>
+					</div>
+
+					<!-- Edit Custom Msg -->
+					<div class="custom-msg pop">
+						<a href="#" class="close-btn"></a>
+						<div class="pop-title">Edit Custom Messages</div>
+
+						<div class="form-group">
+							<select class="form-control">
+								<option>Send to All</option>
+								<option>Send to All</option>
+								<option>Send to All</option>
+								<option>Send to All</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div class='input-group date' id='datetimepicker1'>
+								<input type='text' class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+						<textarea class="form-control" >Good morning, we are having a special breakfast day on 06/17/2016, free breakfast for all</textarea>
+
+						<div class="save"><a href="#" class="save-btn">Save</a></div>
+					</div>
+
+					<!-- Edit Auto Msg -->
+					<div class="auto-msg pop">
+						<a href="#" class="close-btn"></a>
+						<div class="pop-title">Edit Auto Messages</div>
+
+						<div class="form-group">
+							<select class="form-control">
+								<option>Send to All</option>
+								<option>Send to All</option>
+								<option>Send to All</option>
+								<option>Send to All</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<div class='input-group msg-date'>
+								<input type='text' class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+						<textarea class="form-control" >We are looking forward to your arrival in 2 days, if there is anything we can do, please let us know</textarea>
+
+						<div class="save"><a href="#" class="save-btn">Save</a></div>
+
+
+						<div class="message-date">
+							<div class="responsive-close-msg"></div>
+							<div class="pop-title">Auto Message Dates</div>
+							<div class="form-group clearfix marbot">
+								<input type='text' class="form-control small-input" />
+
+								<select class="form-control small-select">
+									<option>Before</option>
+									<option>Before</option>
+									<option>Before</option>
+									<option>Before</option>
+								</select>
+
+								<select class="form-control small-select">
+									<option>Check-in</option>
+									<option>Check-in</option>
+									<option>Check-in</option>
+									<option>Check-in</option>
+								</select>
+							</div>
+
+							<div class="pop-title">Pre-Set Dates</div>
+							<ul class="list-unstyled set-date">
+								<li><a href="#">2 day(s) before check-in</a></li>
+								<li><a href="#">5 day(s) before check-in</a></li>
+								<li><a href="#">30 day(s) before check-in</a></li>
+								<li><a href="#">1 day(s) before check-out</a></li>
+							</ul>
+						</div>	
+					</div>
+				</div>
+				<div class="group-session group-box">
+					<div class="session-holder">
+						<div class="top-row">
+							<div class="dashboard-title">SESSIONS <span> (3) </span> </div>
+							<div class="dashboard-option event-option">
+								<div class="graph-time">
+									<div class="form-group">
+										<select class="form-control">
+											<option>Today</option>
+											<option>Yesterday</option>
+											<option>Today</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<a href="#" class="addbtn add-session-btn">Add New</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="event-info">
+							<div class="blockbox clearfix">
+								<div class="event-top">
+									<h3 class="block-title"><span class="eyefor-icon"></span> Data, data and more data: travel’s big driver in 2017 </h3>
+									<div class="form-group view-detail view-up bg-link">
+										<a href="javascript:;" class="view-up-eye form-control" title="">250</a>
+									</div>
+
+								</div>
+								<div class="chatter-block">
+									<div class="dashboard-search-form">
+										<!-- <input type="text" placeholder="Search"> -->
+										<div class="search-filter">
+											<div class="search-box">
+												<input type="text" placeholder="Search" value="">
+												<input type="submit" value="Submit">									
+											</div>
+										</div>
+										<div class="table-controls">
+											<p><input type="text" value="1"> of 25</p>
+
+											<ul class="pagination">
+												<li><a href="#"><img src="assets/images/prev.png"></a></li>
+												<li><a href="#"><img src="assets/images/next.png"></a></li>
+											</ul>
+											<ul class="table-edit">
+												<li><a href="#"><img src="assets/images/upload.png"></a></li>
+												<li><a href="#"><img src="assets/images/download.png"></a></li>
+											</ul>
+										</div>
+									</div>
+									<table class="dashboard-table">
+										<thead>
+											<tr>
+												<th> Attendees <span class="orange-number">250</span> </th>
+												<th> Phone Number </th>
+												<th> Email Address </th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="event-btm">
+									<div class="date-holder">
+										<div class="text-date">02/23/2017 7:30 AM 02/23/2017 8:30 AM</div>
+										<span class="text-name bg-name">
+											Laarny Seig
+										</span>
+									</div>
+									<div class="pull-right">
+										<div class="options-menu">
+											<a href="javascript:;"><img src="assets/graphics/dots-dropdown.png"></a>
+											<ul class="list-unstyled options-menu-list">
+												<li><a href="#" class="edit-session-btn">Edit</a></li>
+												<li><a href="#">Delete</a></li>
+												<li><a href="#">Archive</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /blockbox -->
+							<div class="blockbox clearfix">
+								<div class="event-top">
+									<h3 class="block-title"><span class="eyefor-icon eyefor-red"></span> Channel Optimization: Best Practices, Current Trends, and a Glimpse into the Future </h3>
+									<div class="form-group view-detail view-up bg-link">
+										<a href="javascript:;" class="view-up-eye form-control" title="">250</a>
+									</div>
+								</div>
+								<div class="chatter-block">
+									<div class="dashboard-search-form">
+										<!-- <input type="text" placeholder="Search"> -->
+										<div class="search-filter">
+											<div class="search-box">
+												<input type="text" placeholder="Search" value="">
+												<input type="submit" value="Submit">									
+											</div>
+										</div>
+										<div class="table-controls">
+											<p><input type="text" value="1"> of 25</p>
+
+											<ul class="pagination">
+												<li><a href="#"><img src="assets/images/prev.png"></a></li>
+												<li><a href="#"><img src="assets/images/next.png"></a></li>
+											</ul>
+											<ul class="table-edit">
+												<li><a href="#"><img src="assets/images/upload.png"></a></li>
+												<li><a href="#"><img src="assets/images/download.png"></a></li>
+											</ul>
+										</div>
+									</div>
+									<table class="dashboard-table">
+										<thead>
+											<tr>
+												<th> Attendees <span class="orange-number">250</span> </th>
+												<th> Phone Number </th>
+												<th> Email Address </th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="event-btm">
+									<div class="date-holder">
+										<div class="text-date">02/23/2017 7:30 AM 02/23/2017 8:30 AM</div>
+										<span class="text-name bg-name">
+											Jordan Hill
+										</span>
+										<span class="text-name bg-name">
+											Usher Brook
+										</span>
+									</div>
+									<div class="pull-right">
+										<div class="options-menu">
+											<a href="javascript:;"><img src="assets/graphics/dots-dropdown.png"></a>
+											<ul class="list-unstyled options-menu-list">
+												<li><a href="javascript:;" class="edit-session-btn">Edit</a></li>
+												<li><a href="javascript:;">Delete</a></li>
+												<li><a href="javascript:;">Archive</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /blockbox -->
+							<div class="blockbox clearfix">
+								<div class="event-top">
+									<h3 class="block-title"><span class="eyefor-icon eyefor-blue"></span> Another Event: How to Leverage Your Guests Satisfaction Using These 4 Simple Methods </h3>
+									<div class="form-group view-detail view-up bg-link">
+										<a href="javascript:;" class="view-up-eye form-control" title="">250</a>
+									</div>
+								</div>
+								<div class="chatter-block">
+									<div class="dashboard-search-form">
+										<!-- <input type="text" placeholder="Search"> -->
+										<div class="search-filter">
+											<div class="search-box">
+												<input type="text" placeholder="Search" value="">
+												<input type="submit" value="Submit">									
+											</div>
+										</div>
+										<div class="table-controls">
+											<p><input type="text" value="1"> of 25</p>
+
+											<ul class="pagination">
+												<li><a href="#"><img src="assets/images/prev.png"></a></li>
+												<li><a href="#"><img src="assets/images/next.png"></a></li>
+											</ul>
+											<ul class="table-edit">
+												<li><a href="#"><img src="assets/images/upload.png"></a></li>
+												<li><a href="#"><img src="assets/images/download.png"></a></li>
+											</ul>
+										</div>
+									</div>
+									<table class="dashboard-table">
+										<thead>
+											<tr>
+												<th> Attendees <span class="orange-number">250</span> </th>
+												<th> Phone Number </th>
+												<th> Email Address </th>
+												<th>Action</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+											<tr>
+												<td> Ollie Farmer </td>
+												<td> 19702413737 </td>
+												<td> olliefarmer@gmail.com </td>
+												<td>
+													<button class="btn-msg"> Message </button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="event-btm">
+									<div class="date-holder">
+										<div class="text-date">02/23/2017 7:30 AM 02/23/2017 8:30 AM</div>
+										<span class="text-name bg-name">
+											Laarny Seig
+										</span>
+									</div>
+									<div class="pull-right">
+										<div class="options-menu">
+											<a href="javascript:;"><img src="assets/graphics/dots-dropdown.png"></a>
+											<ul class="list-unstyled options-menu-list">
+												<li><a href="javascript:;" class="edit-session-btn">Edit</a></li>
+												<li><a href="#">Delete</a></li>
+												<li><a href="#">Archive</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div> <!-- /blockbox -->
+						</div> <!-- /event-info -->
+					</div><!-- /session-holder -->
+				</div>
+				<div class="group-attendees group-box">
+					<div class="attendees-holder">
+						<div class="chatter-block">
+							<div class="dashboard-search-form">
+								<!-- <input type="text" placeholder="Search"> -->
+								<div class="search-filter">
+									<div class="search-box">
+										<input type="text" placeholder="Search" value="">
+										<input type="submit" value="Submit">									
+									</div>
+								</div>
+								<div class="table-controls">
+									<p><input type="text" value="1"> of 25</p>
+
+									<ul class="pagination">
+										<li><a href="#"><img src="assets/images/prev.png"></a></li>
+										<li><a href="#"><img src="assets/images/next.png"></a></li>
+									</ul>
+									<ul class="table-edit">
+										<li><a href="#"><img src="assets/images/upload.png"></a></li>
+										<li><a href="#"><img src="assets/images/download.png"></a></li>
+									</ul>
+								</div>
+							</div>
+							<table class="dashboard-table">
+								<thead>
+									<tr>
+										<th> Attendees <span class="orange-number">250</span> </th>
+										<th> Phone Number </th>
+										<th> Email Address </th>
+										<th>Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+									<tr>
+										<td> Ollie Farmer </td>
+										<td> 19702413737 </td>
+										<td> olliefarmer@gmail.com </td>
+										<td>
+											<button class="btn-msg"> Message </button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- end of content-wrapper -->
+
+		<!-- Add Custom Msg -->
+		<div class="addcustom-msg pop">
+			<a href="#" class="close-btn"></a>
+			<div class="pop-title"> Add Event </div>
+
+			<div class="form-group">
+				<input type='text' class="form-control" placeholder="Event Name" />
+			</div>
+			<div class="form-group">
+				<div class='input-group date' id=''>
+					<input type='text' class="form-control" placeholder="From" />
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class='input-group date' id=''>
+					<input type='text' class="form-control" placeholder="To" />
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="checkbox custom-check">
+					<label for="manager_1">Assign an event manager <span class="optional">(Optional)</span></label>
+					<input type="checkbox" name="check_1" id="manager_1" value="on">
+				</div>
+			</div>
+			<div class="form-group">
+				<select class="form-control">
+					<option>Select users from the list</option>
+					<option>Select users from the list</option>
+					<option>Select users from the list</option>
+					<option>Select users from the list</option>
+				</select>
+			</div>
+
+			<div class="save"><a href="#" class="save-btn">add</a></div>
+		</div>
+
+		<!-- Add Session -->
+		<div class="add-session pop">
+			<a href="#" class="close-btn"></a>
+			<div class="custom-text first-custom-text">
+				<div class="pop-title"> Add Session </div>
+
+				<div class="form-group">
+					<input type='text' class="form-control" placeholder="Session Name" />
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="From" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="To" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="speaker-add-block">
+						<div class="speaker-add-left">
+							<span class="sp-num"> 0 </span>
+							speakers
+						</div>
+						<div class="speaker-add-right">
+							<a class="add-more-speaker" href="javascript:;" title="">add</a>
+						</div>
+					</div>
+				</div>
+				<div class="save"><a href="#" class="save-btn">add</a></div>
+			</div>
+			<div class="custom-text second-custom-text">
+				<a class="back-more-speaker" href="javascript:;" title="">back</a>
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th> Speakers </th>
+							<th> Action </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="speaker-status-tr">
+							<td> Jordan Hill </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Laarny Seige </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Simon Gillespi </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Usher Brook </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Victoria Larry </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Noriel Zuleta </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Arceo Culalic </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Mary Dumangon </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Edit Session -->
+		<div class="edit-session pop">
+			<a href="#" class="close-btn"></a>
+			<div class="custom-text first-custom-text">
+				<div class="pop-title"> Edit Session </div>
+
+				<div class="form-group">
+					<input type='text' class="form-control" placeholder="Channel Optimization: Best Practices, Current Tren" />
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="02/23/2017 9:30 AM" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="02/23/2017 10:30 AM" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="speaker-add-block">
+						<div class="speaker-add-left">
+							<span class="sp-num sp-num-orange"> 2 </span>
+							speakers
+						</div>
+						<div class="speaker-add-right">
+							<a class="add-more-speaker" href="javascript:;" title="">add</a>
+						</div>
+					</div>
+				</div>
+				<div class="save"><a href="#" class="save-btn">UPDATE</a></div>
+			</div>
+			<div class="custom-text second-custom-text">
+				<a class="back-more-speaker" href="javascript:;" title="">back</a>
+				<table class="table table-responsive">
+					<thead>
+						<tr>
+							<th> Speakers </th>
+							<th> Action </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="speaker-status-tr active">
+							<td> Jordan Hill </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Laarny Seige </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Simon Gillespi </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr active">
+							<td> Usher Brook </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Victoria Larry </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Noriel Zuleta </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Arceo Culalic </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+						<tr class="speaker-status-tr">
+							<td> Mary Dumangon </td>
+							<td> <span class="speaker-status">status</span> </td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- Edit User Msg -->
+		<div class="auto-msg pop">
+			<a href="#" class="close-btn"></a>
+			<div class="pop-title"> Edit Event </div>
+
+			<div class="form-group">
+				<input type='text' class="form-control" placeholder="EyeforTravel North America 2017" />
+			</div>
+			<div class="form-group">
+				<div class='input-group date' id=''>
+					<input type='text' class="form-control" placeholder="02/23/2017" />
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class='input-group date' id=''>
+					<input type='text' class="form-control" placeholder="02/24/2017" />
+					<span class="input-group-addon">
+						<span class="glyphicon glyphicon-calendar"></span>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="checkbox custom-check">
+					<label for="manager_2">Assign an event manager <span class="optional">(Optional)</span></label>
+					<input type="checkbox" name="check_2" id="manager_2" value="on">
+				</div>
+			</div>
+			<div class="form-group">
+				<select class="form-control">
+					<option>Julie Ziu</option>
+					<option>Julie Ziu</option>
+					<option>Julie Ziu</option>
+					<option>Julie Ziu</option>
+				</select>
+			</div>
+
+			<div class="save"><a href="#" class="save-btn"> UPDATE </a></div>
+		</div>
+
+		<div class="chatbox">
+				<div class="chat-title-box">
+					<div class="responsive-back"><a href="#">Back</a></div>
+					<a href="javascript:void(0);" class="chat-close"></a>
+					<div class="chatbox-title">Wedding</div>
+				</div>
+
+				<div class="chat-details">
+					<div class="chat-date">Wednesday, June  8, 2016 </div>
+					<div class="chat-line from">
+						<div class="chat-time">9:08 AM</div>
+						<div class="chat-msg">Good day Ms. Vargas hope you enjoyed your stay at our hotel.</div>
+					</div>
+
+					<div class="chat-date">Friday, June  10, 2016 </div>
+					<div class="chat-line to">
+						<div class="chat-time">10:28 AM</div>
+						<div class="chat-msg">This is a guest reply #1</div>
+					</div>
+
+					<div class="chat-date">Wednesday, June  8, 2016 </div>
+					<div class="chat-line from">
+						<div class="chat-time">9:08 AM</div>
+						<div class="chat-msg">Good day Ms. Vargas hope you enjoyed your stay at our hotel.</div>
+					</div>
+
+					<div class="chat-date">Friday, June  10, 2016 </div>
+					<div class="chat-line to">
+						<div class="chat-time">10:28 AM</div>
+						<div class="chat-msg">This is a guest reply #1</div>
+					</div>						
+				</div>
+				<div class="chat-box">
+					<div class="chatsend">
+						<textarea class="form-controls" placeholder="Enter your reply here...." rows="1" cols="1"></textarea>
+						<input type="submit" class="chat_send_btn" value="SEND">
+					</div>
+				</div>
+			</div>
+
+	</div><!--end of wrapper-->
+
+
+	<!-- scripts -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/moment.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
+	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script> -->
+	<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	<!-- Chart CDN -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+
+	<script type="text/javascript" src="assets/js/circle-progress.js"></script>
+	<script type="text/javascript" src="assets/js/stickyfloat.js"></script>
+	<script type="text/javascript" src="assets/js/core.js"></script>
+	<script type="text/javascript" src="assets/js/checkbox.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script>
+		$("input[type=checkbox], input[type=radio]").checkbox();
+		$('.view-up-eye').on('click', function(){
+			$(this).parents().eq(2).children('.chatter-block').toggleClass('chatter-active');
+			$('.view-up-eye').toggleClass('eye-active');
+		});
+	</script>
+
+</body>
+</html>

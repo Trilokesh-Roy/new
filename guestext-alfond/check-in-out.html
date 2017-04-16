@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="type='text/html'; charset='utf-8' ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Guestext</title>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<div class="container check-in-out-page">
+
+		<div class="heading clearfix">
+			<div class="logo">
+				<img src="assets/img/guestext-logo.png">
+			</div>
+			<div class="calender-ico">
+				<!-- <img src="assets/img/calender-ico.png"> -->
+			</div>
+		</div>
+		<div class="check-in-out-block">
+			<div class="notes">
+				<p>Set your check in and check out dates so messages can be sent at appropriate times.
+				</p>
+			</div>
+			<div class="check-control">
+				<form class="check-in-out form-control">
+					<!-- <div class="check check-in">
+						<div class="date-picker">
+							<input class="from" name="from" placeholder="Choose check-in date">
+							<img src="assets/img/calendar-icon.png">
+						</div>
+					</div> -->
+					<div class="container">
+						<div class="row">
+							<div class='col-sm-12'>
+								<div class="form-group">
+									<div class='input-group date datetimepicker1'>
+										<input type='text' class="form-control" placeholder="Choose check-in date" />
+										<span class="input-group-addon">
+											<span><img src="assets/img/calendar-icon.png"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<!-- <div class="check check-out">
+						<div class="date-picker">
+							<input class="to" name="to" placeholder="Choose check-out date">
+							<img src="assets/img/calendar-icon.png">
+						</div>
+					</div> -->
+					<div class="container">
+						<div class="row">
+							<div class='col-sm-12'>
+								<div class="form-group">
+									<div class='input-group date datetimepicker1'>
+										<input type='text' class="form-control" placeholder="Choose check-out date" />
+										<span class="input-group-addon">
+											<span><img src="assets/img/calendar-icon.png"></span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="check event-group">
+						<div class="event">
+							<label>Optional</label>
+							<!-- <div class="dropdown">
+								<button class="dropdown-toggle" type="button" data-toggle="dropdown">Choose event group</button>
+								<ul class="dropdown-menu">
+									<li><a href="#">option1</a></li>
+									<li><a href="#">option1</a></li>
+									<li><a href="#">option1</a></li>
+								</ul>
+								
+							</div> -->
+							<select class="dropdown">
+								<option>Choose event group</option>
+								<option>item 1</option>
+								<option>item 1</option>
+								<option>item 1</option>
+								<!-- <img src="assets/img/caret-down.png"> -->
+							</select>
+						</div>
+					</div>
+				</form>
+				<div class="btn-save">
+					<button type="submit">Save</button>
+				</div>
+			</div>
+		</div>
+		<div class="message-block">
+			<div class="message-box">
+				<div class="message-date">
+					<p>Wednesday, June  8, 2016</p>
+				</div>
+				<div class="message received-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>We are looking forward to your arrival 
+							in 2 days, if there is anything we can do, 
+							please let us know
+						</p>
+					</div>
+				</div>
+				<div class="message received-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>We are looking forward to your arrival 
+							in 2 days, if there is anything we can do, 
+							please let us know
+						</p>
+					</div>
+				</div>
+				<div class="message-date">
+					<p>Wednesday, June  8, 2016</p>
+				</div>
+				<div class="message sent-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>We are looking forward to your arrival 
+							in 2 days, if there is anything we can do, 
+							please let us know
+						</p>
+					</div>
+				</div>
+				<div class="message sent-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>a
+						</p>
+					</div>
+				</div>
+				<div class="message sent-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>b
+						</p>
+					</div>
+				</div>
+				<div class="message received-msg">
+					<div class="time">
+						<p>9:08 AM</p>
+					</div>
+					<div class="msg">
+						<p>We are looking forward to your arrival 
+							in 2 days, if there is anything we can do, 
+							please let us know
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="messager-type">
+				<input type="text" placeholder="Enter your message here..."></input>
+				<button type="submit"><img src="assets/img/send.png"></button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/moment.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.js"></script>
+	<script type="text/javascript" src="assets/js/retina.min.js"></script>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+</html>

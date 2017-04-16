@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="type='text/html'; charset='utf-8' ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="assets/css/intlTelInput.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/demo.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Guestext</title>
+</head>
+<body id="home">
+	<div class="container ">
+		<div class="banner">
+			<img src="assets/img/banner.jpg">
+			<div class="banner-text">
+				<h1>The Alfond Inn</h1>
+				<h2>Staying in Touch</h2>
+			</div>
+			<div class="banner-overlay">
+				<div class="login">
+					<form class="form-control">
+						<!-- <div class="area-label">
+							<p>Country code</p>	
+							<p>Area code</p>	
+							<p>Mobile number</p>	
+						</div>
+						<div class="triple-input">
+							<input type="text" class="country-code" placeholder="+00" />
+							<input type="text" class="area-code"  placeholder="000"/>
+							<input type="text" class="mobile-number" placeholder="000 0000" />
+						</div> -->
+						<label>Phone Number</label>
+						<input id="phone" type="tel">	
+
+						<!-- <input type="tel" placeholder="Mobile Number"></input> -->
+						<label>Name</label>
+						<input type="text" placeholder="Your Name"></input>
+						<label>Message</label>
+						<textarea cols="4" rows="3" placeholder="Enter your message (Optional)"></textarea> 
+					</form>
+					<div class="terms">
+						<p>By clicking connect you are agreeing to</p> <a href="#">Terms & Conditions.</a>
+					</div>
+					<div class="submit-btn">
+						<button type="submit">Connect</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<footer>
+			<img src="assets/img/guestext-logo-index.png">
+		</footer>
+	</div>
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="assets/js/intlTelInput.js"></script>
+	<script>
+		$("#phone").intlTelInput({
+			// allowDropdown: false,
+			// autoHideDialCode: false,
+			// autoPlaceholder: false,
+			// dropdownContainer: "body",
+			// excludeCountries: ["us"],
+			// geoIpLookup: function(callback) {
+			//   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+			//     var countryCode = (resp && resp.country) ? resp.country : "";
+			//     callback(countryCode);
+			//   });
+			// },
+			// initialCountry: "auto",
+			// nationalMode: false,
+			// numberType: "MOBILE",
+			// onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+			// preferredCountries: ['cn', 'jp'],
+			// separateDialCode: true,
+			utilsScript: "assets/js/utils.js"
+		});		
+		$(".widget-close").click(function(){
+			parent.closeIFrame();
+		});
+	</script>
+</body>
+</html>

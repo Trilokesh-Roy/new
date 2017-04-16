@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Guestext</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Roboto:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- styles -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/update.css">
+
+</head>
+<body>
+	<div id="wrapper">
+		<div class="header-container">
+			<header id="header" class="container">
+				<div class="dropdown pull-right">
+					<a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">MY ACCOUNT <span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">My Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</div>
+				<div class="responsive-menu">
+					<a href="#"><img src="assets/graphics/menu.png"></a>
+				</div>
+				<div id="logo">
+					<h1><img src="assets/graphics/logo.png" alt="Guestext"></h1>
+					<div class="welcome">Welcome, Admin</div>
+				</div><!--end of logo-->
+			</header><!--end of header-->
+		</div><!--end of header-container-->
+
+
+		<aside id="sidebar" class="main-sidebar">
+			<ul class="sidebar-menu">
+				<li class="active"><a href="Assigned-Event.html" title="Guests"><span class="guest-icon guest-icon2"></span>Events</a></li>
+				<li><a href="speakers.html" title="Loyalty"><span class="loyal-icon"></span>Speakers</a></li>
+			</ul><!-- end of sidebar-menu -->
+		</aside><!-- end of sidebar -->
+
+		<div class="content-wrapper">
+			<div class="dashboard-content clearfix">
+				<div class="top-row">
+					<div class="dashboard-title">EVENTS <span>(1)</span> </div>
+					<div class="dashboard-option event-option">
+						<div class="graph-time">
+							<div class="form-group">
+								<select class="form-control">
+									<option>Today</option>
+									<option>Yesterday</option>
+									<option>Today</option>
+								</select>
+							</div>
+							<!-- <div class="form-group">
+								<a href="#" class="addbtn addcustom">Add New</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+				<div class="event-info">
+					<div class="blockbox clearfix">
+						<div class="event-top">
+							<h3 class="block-title"><span class="eyefor-icon"></span> EyeforTravel North America 2017 </h3>
+							<a href="event-m-details.html" title="" class="view-detail bg-link  pull-right">View Details</a>
+						</div>
+						<div class="event-btm">
+							<div class="date-holder">
+								<div class="text-date">02/23/2017 - 02/24/2017</div>
+								<span class="text-name bg-name">
+									Julie Ziu
+								</span>
+							</div>
+							<div class="pull-right">
+								<div class="options-menu">
+									<a href="#"><img src="assets/graphics/dots-dropdown.png"></a>
+									<ul class="list-unstyled options-menu-list">
+										<li><a href="#" class="edit-auto-msg">Edit</a></li>
+										<li><a href="#">Delete</a></li>
+										<li><a href="#">Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /blockbox -->
+					<div class="blockbox clearfix">
+						<div class="event-top">
+							<h3 class="block-title"><span class="eyefor-icon eyefor-icon-r"></span> EyeforTravel North America 2017 </h3>
+							<a href="event-m-details.html" title="" class="view-detail bg-link  pull-right">View Details</a>
+						</div>
+						<div class="event-btm">
+							<div class="date-holder">
+								<div class="text-date">02/23/2017 - 02/24/2017</div>
+								<span class="text-name bg-name">
+									Julie Ziu
+								</span>
+							</div>
+							<div class="pull-right">
+								<div class="options-menu">
+									<a href="#"><img src="assets/graphics/dots-dropdown.png"></a>
+									<ul class="list-unstyled options-menu-list">
+										<li><a href="#" class="edit-auto-msg">Edit</a></li>
+										<li><a href="#">Delete</a></li>
+										<li><a href="#">Archive</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div> <!-- /blockbox -->
+				</div> <!-- /event-info -->
+
+
+			</div><!-- end of content-wrapper -->
+
+			<!-- Add Custom Msg -->
+			<div class="addcustom-msg pop">
+				<a href="#" class="close-btn"></a>
+				<div class="pop-title"> Add Event </div>
+
+				<div class="form-group">
+					<input type='text' class="form-control" placeholder="Event Name" />
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="From" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="To" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="checkbox custom-check">
+						<label for="manager_1">Assign an event manager <span class="optional">(Optional)</span></label>
+						<input type="checkbox" name="check_1" id="manager_1" value="on">
+					</div>
+				</div>
+				<div class="form-group">
+					<select class="form-control">
+						<option>Select users from the list</option>
+						<option>Select users from the list</option>
+						<option>Select users from the list</option>
+						<option>Select users from the list</option>
+					</select>
+				</div>
+
+				<div class="save"><a href="#" class="save-btn">add</a></div>
+			</div>
+
+			<!-- Edit User Msg -->
+			<div class="auto-msg pop">
+				<a href="#" class="close-btn"></a>
+				<div class="pop-title"> Edit Event </div>
+
+				<div class="form-group">
+					<input type='text' class="form-control" placeholder="EyeforTravel North America 2017" />
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="02/23/2017" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class='input-group date' id=''>
+						<input type='text' class="form-control" placeholder="02/24/2017" />
+						<span class="input-group-addon">
+							<span class="glyphicon glyphicon-calendar"></span>
+						</span>
+					</div>
+				</div>
+
+				<div class="save"><a href="#" class="save-btn"> UPDATE </a></div>
+			</div>
+
+		</div><!--end of wrapper-->
+
+
+		<!-- scripts -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/js/moment.js"></script>
+		<script type="text/javascript" src="assets/bootstrap/js/bootstrap-datetimepicker.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Chart CDN -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.js"></script>
+
+		<script type="text/javascript" src="assets/js/circle-progress.js"></script>
+		<script type="text/javascript" src="assets/js/stickyfloat.js"></script>
+		<script type="text/javascript" src="assets/js/core.js"></script>
+		<script type="text/javascript" src="assets/js/checkbox.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+		<script>
+			$("input[type=checkbox], input[type=radio]").checkbox();
+		</script>
+
+	</body>
+	</html>
